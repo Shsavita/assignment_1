@@ -1,0 +1,13 @@
+import java.util.*;
+public class Main {
+    public static void main(String args[]) {
+		int a,cum_sum=0;
+		Scanner sc = new Scanner(System.in);
+    a = sc.nextInt();
+    while((cum_sum+a)>=0){
+        cum_sum+=a;
+       System.out.println(a);
+        a = sc.nextInt();
+    }
+    }
+}
