@@ -1,0 +1,27 @@
+import java.util.*;
+public class Main {
+    public static void main(String args[]) {
+Scanner sc = new Scanner(System.in);
+int n=sc.nextInt();
+int s=n;
+int m=n;
+int c=0;
+int num=0;
+while(n>0){
+	 
+	c++;
+	n=n/10;
+}
+while(m>0){
+	 int k=m%10;
+	 num+=Math.pow(k,c);
+	 m=m/10;
+}
+if(num==s){
+	System.out.print("true");
+}
+else{
+	System.out.print("false");
+}
+    }
+}
