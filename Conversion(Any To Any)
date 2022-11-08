@@ -1,0 +1,30 @@
+ import java.util.*;
+public class Main {
+    public static void main(String args[]) {
+		Scanner sc= new Scanner(System.in);
+		int b1=sc.nextInt();
+		int b2=sc.nextInt();
+		int n=sc.nextInt();
+		 
+		 fun(n,b1,b2);	 	  
+	}
+		public static void fun(int num,int b1,int b2){
+				int sum=0;
+		int i=0;
+			while(num>0){
+				int k= num%10;
+				sum+= k*Math.pow(b1,i);
+				i++;
+				num=num/10;
+			}
+		 i=1;
+		int sum2=0;
+		while(sum>0){
+			int k= sum%b2;
+			sum2+=k*i;
+			i*=10;
+			sum=sum/b2;
+		}
+		 System.out.print(sum2);
+	}
+}
