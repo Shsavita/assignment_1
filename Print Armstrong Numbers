@@ -1,0 +1,40 @@
+ import java.util.*;
+public class Main {
+    public static void main(String args[]) {
+        // Your Code Here
+        Scanner sc = new Scanner(System.in);
+        int N1 = sc.nextInt();
+        int N2 = sc.nextInt();
+
+        fun(N1, N2);
+    }
+
+    public static void fun(int n1, int n2) {
+        int c = 0;
+        int k=n1;
+        int m=n1;
+
+
+        for (int i = n1; i <= n2; i++) {
+            int n=i;
+            c=0;
+            while (n > 0) {
+                c++;
+                n = n / 10;
+            }
+k=i;
+            int sum=0;
+            while(k>0){
+                int s=k%10;
+              sum+=Math.pow(s,c);
+              k=k/10;
+         }
+            m=i;
+
+         if(sum==m){
+               System.out.println(sum);
+           }
+        }
+    }
+
+}
