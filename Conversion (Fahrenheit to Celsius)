@@ -1,0 +1,13 @@
+ #include<iostream>
+using namespace std;
+int main() {
+	int min;
+	int max;
+	int s;
+	cin>>min>>max>>s;
+	for(int i=min;i<=max;i=i+s){
+		int c=5*(i-32)/9;
+		cout<<i<<" "<<c<<endl;
+	}
+	return 0;
+}
